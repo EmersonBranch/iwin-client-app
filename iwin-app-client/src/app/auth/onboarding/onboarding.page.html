@@ -1,0 +1,38 @@
+<ion-header>
+  <img src="assets/images/iwin-logo.png" alt="logo_iwin">
+</ion-header>
+
+<ion-content>
+  <swiper-container 
+    #swiper
+    [pagination]="true">
+    <swiper-slide class="onboard-slider">
+      <div class="slide-image">
+        <img src="assets/images/iwin-onboarding-slide-one.png" alt="">
+      </div>
+      <div class="slide-title iwin-font">
+        <h1>Bem-vindo!</h1>
+      </div>
+      <div class="slide-text iwin-text">
+        <p>O iWin te ajuda a gerenciar suas<br> participações em sorteios e eventos.</p>
+      </div>
+      <div class="slide-button">
+        <ion-button class="iwin-button-theme" (click)="goNext()">Próximo</ion-button>
+      </div>
+    </swiper-slide>
+    <swiper-slide class="onboard-slider">
+      <div class="slide-image">
+        <img src="assets/images/iwin-onboarding-slide-one.png" alt="">
+      </div>
+      <div class="slide-title iwin-font">
+        <h1>E para lojistas:</h1>
+      </div>
+      <div class="slide-text iwin-text">
+        <p>Uma ferramenta muito útil para te<br> ajudar a gerenciar suas promoções.</p>
+      </div>
+      <div class="slide-button">
+        <ion-button class="iwin-button-theme">Acessar</ion-button>
+      </div>
+    </swiper-slide>
+  </swiper-container>
+</ion-content>

@@ -36,10 +36,11 @@
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import "@ionic/angular/css/palettes/dark.system.css";
 :root {
-	--ion-background-color: #5433FE;
+	--ion-font-family: "Poppins", sans-serif;
+	--ion-background-color: #fff;
 	--ion-background-color-rgb: 84,51,254;
 
-	--ion-text-color: #FFFFFF;
+	--ion-text-color: #262626;
 	--ion-text-color-rgb: 255,255,255;
 
 	--ion-text-color-step-50: #f6f5ff;
@@ -81,4 +82,20 @@
 	--ion-background-color-step-850: #e5e0ff;
 	--ion-background-color-step-900: #eeebff;
 	--ion-background-color-step-950: #f6f5ff;
+	
 }
+
+.iwin-font h1{
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 48px;
+  color: #262626;
+}
+
+.iwin-text p{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #5B5B5B;
+}
+
