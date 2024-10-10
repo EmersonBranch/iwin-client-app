@@ -11,6 +11,10 @@
         box-shadow: none;
         margin: 40px 0 40px;
     }
+    
+    .header-md{
+        box-shadow: none;
+    }
 
     ion-header img{
         width: 61px;
@@ -41,6 +45,7 @@
 
     .onboard-slider .slide-title h1{
         margin: 0;
+        color: #5B5B5B;
     }
 
     .onboard-slider .slide-text{
@@ -50,6 +55,7 @@
 
     .onboard-slider .slide-text p{
         margin: 0;
+        color: #5B5B5B;
     }
 
     .onboard-slider .slide-button{
@@ -73,10 +79,10 @@
 
 :host {
     display: block;
-    background-image: url('../../../assets/images/iwin-cover.png'); /* Caminho para a imagem */
-    background-size: cover; /* Faz a imagem cobrir toda a área */
-    background-position: center; /* Centraliza a imagem */
-    height: 100vh; /* Altura total da tela */
+    background-image: url('../../../assets/images/iwin-cover.png'); 
+    background-size: cover;
+    background-position: center; 
+    height: 100vh; 
 
     ion-content{
         --background: transparent;
