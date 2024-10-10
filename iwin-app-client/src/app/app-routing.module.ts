@@ -7,8 +7,12 @@ const routes: Routes = [
     loadChildren: () => import('./auth/onboarding/onboarding.module').then( m => m.OnboardingPageModule)
   },
   {
+    path: 'login',
+    loadChildren: () => import('./auth/login/login.module').then( m => m.LoginPageModule)
+  },
+  {
     path: '',
-    redirectTo: 'onboarding',
+    redirectTo: 'login',
     pathMatch: 'full'
   },
 ];
