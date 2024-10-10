@@ -25,6 +25,11 @@
         display: none !important;
     }
 
+    swiper-container{
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
     .onboard-slider{
         display: flex;
         flex-direction: column;
