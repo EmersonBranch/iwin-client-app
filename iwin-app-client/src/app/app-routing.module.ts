@@ -19,8 +19,12 @@ const routes: Routes = [
     loadChildren: () => import('./auth/signup-success/signup-success.module').then( m => m.SignupSuccessPageModule)
   },
   {
+    path: 'loading',
+    loadChildren: () => import('./loading/loading.module').then( m => m.LoadingPageModule)
+  },
+  {
     path: '',
-    redirectTo: 'signup-success',
+    redirectTo: 'loading',
     pathMatch: 'full'
   },
 
