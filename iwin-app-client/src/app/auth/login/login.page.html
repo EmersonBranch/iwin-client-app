@@ -12,16 +12,25 @@
       ou crie sua conta:</p>
   </div>
 
-  <ion-button value="usuario" class="iwin-type-user iwin-text">
-      <img src="../assets/icon/icon-user-login.png" alt="iwin-user">
-      <p>Usuário</p>
-  </ion-button>
-  <ion-button value="lojista" class="iwin-type-user iwin-text">
-      <p>Lojista</p>
-      <img src="../assets/icon/icon-user-login.png" alt="iwin-user">
-  </ion-button>
-
   <form (ngSubmit)="onSubmit()" [formGroup]="form" class="login-form">
+    <ion-button 
+      value="usuario" 
+      class="iwin-type-user iwin-text" 
+      [ngClass]="{'active': form.get('userType')?.value === 'usuario'}" 
+      (click)="selectUserType('usuario')">
+        <img src="../assets/icon/icon-user-login.png" alt="iwin-user">
+        <p>Usuário</p>
+    </ion-button>
+
+    <ion-button 
+      value="lojista" 
+      class="iwin-type-user iwin-text" 
+      [ngClass]="{'active': form.get('userType')?.value === 'lojista'}" 
+      (click)="selectUserType('lojista')">
+        <p>Lojista</p>
+        <img src="../assets/icon/icon-shopkeeper-login.png" alt="iwin-user">
+    </ion-button>
+
     <div class="form-group">
       <label for="login">E-mail ou número de telefone:</label>
       <input type="text" name="login" formControlName="login" placeholder="Digite aqui...">
