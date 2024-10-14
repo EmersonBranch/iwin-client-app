@@ -59,19 +59,19 @@
     }
 
     .w {
-        animation: slideUp 0.5s forwards 2s; /* Vem de baixo */
+        animation: slideUp 0.2s forwards 2s; /* Vem de baixo */
         background: transparent;
         color: #000;
     }
     
     .i {
-        animation: slideDown 0.5s forwards 2s; /* Vem de cima */
+        animation: slideDown 0.2s forwards 2s; /* Vem de cima */
         background: transparent;
         color: #000;
     }
     
     .n {
-        animation: slideRight 0.5s forwards 2s; /* Vem da direita */
+        animation: slideRight 0.2s forwards 2s; /* Vem da direita */
         background: transparent;
         color: #000;
     }
