@@ -15,10 +15,15 @@ const routes: Routes = [
     loadChildren: () => import('./auth/signup/signup.module').then( m => m.SignupPageModule)
   },
   {
+    path: 'signup-success',
+    loadChildren: () => import('./auth/signup-success/signup-success.module').then( m => m.SignupSuccessPageModule)
+  },
+  {
     path: '',
-    redirectTo: 'signup',
+    redirectTo: 'signup-success',
     pathMatch: 'full'
   },
+
 ];
 
 @NgModule({
