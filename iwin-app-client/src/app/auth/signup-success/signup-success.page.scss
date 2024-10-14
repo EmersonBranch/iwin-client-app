@@ -1,0 +1,76 @@
+
+::ng-deep{
+
+    ion-content {
+        --background: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        position: relative;
+    }
+
+    .content {
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        height: 100%; 
+        flex-direction: column;
+    }
+
+    .content-icon{
+        margin: 0 0 30px 0;
+    }
+
+    .content-icon img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .content-title{
+        margin: 0 0 5px 0;
+        padding: 0 30px;
+    }
+
+    .content-title h1{
+        color: #fff;
+        margin: 0;
+    }
+
+    .content-text{
+        padding: 0 30px;
+    }
+
+    .content-text p{
+        color: #fff;
+        margin: 0;
+    }
+
+    .iwin-button-theme{
+        --background: #fff;
+        --background-hover: #fff;
+        --background-activated: #fff;
+        --background-focused: #fff;
+        width: 100%;
+        --color: #5433FE;
+        --border-radius: 300px;
+        --padding-top: 25px;
+        --padding-bottom: 25px;
+        position: absolute;
+        max-width: 342px;
+        bottom: 80px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+}
+
+:host {
+    height: 100vh; 
+    background: #5433FE;
+    display: block;
+    background-image: url('../../../assets/images/iwin-cover.png'); 
+    background-size: cover;
+    background-position: center; 
+    background-blend-mode: overlay;
+}
