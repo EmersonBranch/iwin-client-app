@@ -1,0 +1,137 @@
+::ng-deep{
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body, html {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    body::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #00FFB2; /* Cor inicial sólida */
+        z-index: -1; /* Coloca o gradiente atrás do conteúdo */
+        animation: gradientChange 2s forwards; /* Animação do gradiente */
+    }
+    
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    
+    .effect-letter {
+        margin: 0 3px;
+        font-size: 100px;
+        height: 220px;
+        width: 22px;
+        font-weight: bold;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        background: linear-gradient(180deg, #00FFB2 15%, #5433FE 85%);
+        animation: shrink 2s forwards;
+    }
+
+    .effect-display {
+        margin: 0 3px;
+        opacity: 0;
+        font-size: 100px;
+        font-weight: bold;
+    }
+
+    .effect-display img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .w {
+        animation: slideUp 0.2s forwards 2s; /* Vem de baixo */
+        background: transparent;
+        color: #000;
+    }
+    
+    .i {
+        animation: slideDown 0.2s forwards 2s; /* Vem de cima */
+        background: transparent;
+        color: #000;
+    }
+    
+    .n {
+        animation: slideRight 0.2s forwards 2s; /* Vem da direita */
+        background: transparent;
+        color: #000;
+    }
+    
+    @keyframes slideUp {
+        from {
+            transform: translateY(100%); /* Começa abaixo */
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    
+    @keyframes slideDown {
+        from {
+            transform: translateY(-100%); /* Começa acima */
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    
+    @keyframes slideRight {
+        from {
+            transform: translateX(100%); /* Começa à direita */
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+    
+    
+    @keyframes gradientChange {
+        0% {
+            background: #00FFB2; /* Começa com a cor sólida */
+        }
+        100% {
+            background: #5433FE; /* Gradiente completo ao final */
+        }
+    }
+    
+    @keyframes shrink {
+        0% {
+            transform: scale(10);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    
+    @keyframes fade-in {
+        to {
+            opacity: 1;
+        }
+    }
+    
+}
