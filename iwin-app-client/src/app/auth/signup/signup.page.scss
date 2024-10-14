@@ -1,186 +1,179 @@
 
-::ng-deep{
+.ion-page{
+    background-color: #fff;;
+}
 
-    .ion-page{
-        background-color: #fff;;
-    }
-
-    ion-header{
-        
-        box-shadow: none;
-        margin: 40px 0 40px;
-    }
+ion-header{
     
-    .header-md{
-        box-shadow: none;
-    }
+    box-shadow: none;
+    margin: 40px 0 40px;
+}
 
-    ion-header .logo{
-        text-align: center;
-    }
+.header-md{
+    box-shadow: none;
+}
 
-    ion-header img{
-        width: 61px;
-        height: auto;
-    }
+ion-header .logo{
+    text-align: center;
+}
 
-    .back-login{
-        text-align: left;
-        padding: 0 30px;
-    }
+ion-header img{
+    width: 61px;
+    height: auto;
+}
 
-    .back-login button{
-        background: #fff;
-        border: 1px solid #5433FE;
-        padding: 2px 15px;
-        border-radius: 42px;
-        transition: 0.2s all;
-    }
+.back-login{
+    text-align: left;
+    padding: 0 30px;
+}
 
-    .back-login button ion-icon{
-        color: #5433FE;
-        font-size: 30px;
-        height: 24px;
-    }
+.back-login button{
+    background: #fff;
+    border: 1px solid #5433FE;
+    padding: 2px 15px;
+    border-radius: 42px;
+    transition: 0.2s all;
+}
 
-    .back-login button:hover,
-    .back-login button:focus{
-        background: #5433FE;
-        border: 1px solid #5433FE;
-    }
+.back-login button ion-icon{
+    color: #5433FE;
+    font-size: 30px;
+    height: 24px;
+}
 
-    .back-login button:hover, 
-    .back-login button:focus ion-icon{
-        color: #fff;
-    }
+.back-login button:hover,
+.back-login button:focus{
+    background: #5433FE;
+    border: 1px solid #5433FE;
+}
 
-    .signup-title{
-        margin: 0 0 15px 0;
-    }
+.back-login button:hover, 
+.back-login button:focus ion-icon{
+    color: #fff;
+}
 
-    .signup-title h1{
-        color: #262626;
-        margin: 0;
-    }
+.signup-title{
+    margin: 0 0 5px 0;
+}
 
-    .signup-text{
-        padding: 0 30px;
-        margin: 0 0 20px 0;
-    }
+.signup-title h1{
+    color: #262626;
+    margin: 0;
+}
 
-    .signup-text p{
-        color: #5B5B5B;
-        margin: 0;
-    }
+.signup-text{
+    padding: 0 30px;
+    margin: 0 0 20px 0;
+}
 
-    ion-content {
-        --background: transparent;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-    }
+.signup-text p{
+    color: #5B5B5B;
+    margin: 0;
+}
 
-    ion-segment{
-        margin: 0 0 10px 0;
-    }
+ion-content {
+    --background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
 
-    ion-segment-button p{
-        display: inline-block;
-        vertical-align: middle;
-        margin: 0;
-        color: #fff;
-    }
+ion-segment{
+    margin: 0 0 10px 0;
+}
 
+ion-segment-button p{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    color: #fff;
+}
+
+
+ion-segment-button img{
+    width: 40px;
+    display: inline-block;
+    vertical-align: middle;
+}
     
-    ion-segment-button img{
-        width: 40px;
-        display: inline-block;
-        vertical-align: middle;
-    }
-      
-    .signup-form {
-        padding: 0 25px;
-        width: 100%;
-        max-width: 600px;
-        margin: 0 auto;
-    }
+.signup-form {
+    padding: 0 25px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
 
-    .active p{
-        opacity: 1 !important;
-    }
+.active p{
+    opacity: 1 !important;
+}
 
-    .iwin-button-theme{
-        --background: #5433FE;
-        --background-hover: #5433FE;
-        --background-activated: #5433FE;
-        --background-focused: #5433FE;
-        width: 100%;
-        --color: #fff;
-        --border-radius: 300px;
-        --padding-top: 25px;
-        --padding-bottom: 25px;
-        margin-top: 1rem;
-    }
+.iwin-button-theme{
+    --background: #5433FE;
+    --background-hover: #5433FE;
+    --background-activated: #5433FE;
+    --background-focused: #5433FE;
+    width: 100%;
+    --color: #fff;
+    --border-radius: 300px;
+    --padding-top: 25px;
+    --padding-bottom: 25px;
+    margin-top: 1rem;
+}
 
-    .iwin-type-user{
-        margin: 0 0 20px 0;
-        width: 50%;
-        --background: transparent;
-        --padding-bottom: 0;
-        --padding-top: 0;
-        --box-shadow: none;
-    }
+.iwin-type-user{
+    margin: 0 0 20px 0;
+    width: 50%;
+    --background: transparent;
+    --padding-bottom: 0;
+    --padding-top: 0;
+    --box-shadow: none;
+}
 
-    .iwin-type-user p{
-        margin: 0 10px;
-        transition: 0.2s all;
-        opacity: 50%;
-        color: #262626;
-    }
+.iwin-type-user p{
+    margin: 0 10px;
+    transition: 0.2s all;
+    opacity: 50%;
+    color: #262626;
+}
 
-    .form-group{
-        margin-bottom: 20px;
-    }
+.form-group{
+    margin-bottom: 20px;
+}
 
-    .form-group label{
-        display: block;
-        color: #4A4A4A;
-        font-weight: 400;
-        line-height: 20.9px;
-        font-size: 15px;
-        padding: 0 20px;
-        margin: 0 0 5px 0;
-    }
+.form-group label{
+    display: block;
+    color: #4A4A4A;
+    font-weight: 400;
+    line-height: 20.9px;
+    font-size: 15px;
+    padding: 0 20px;
+    margin: 0 0 5px 0;
+}
 
-    .form-group input{
-        width: 100%;
-        border: 1px solid #5433FE;
-        background-color: transparent;
-        color: #ECECEC;
-        border-radius: 61px;
-        padding: 15px 20px;
-    }
+.form-group input{
+    width: 100%;
+    border: 1px solid #5433FE;
+    background-color: transparent;
+    color: #ECECEC;
+    border-radius: 61px;
+    padding: 15px 20px;
+}
 
-    .form-group input:focus-visible{
-        outline: none;
-    }
+.form-group input:focus-visible{
+    outline: none;
+}
 
-    .form-group input::placeholder{
-        color: #B7B7B7;
-    }
-
+.form-group input::placeholder{
+    color: #B7B7B7;
 }
 
 
 :host {
+    background: #fff;
     display: block;
     background-image: url('../../../assets/images/iwin-cover.png'); 
     background-size: cover;
     background-position: center; 
     height: 100vh; 
-
-    ion-content{
-        --background: transparent;
-    }
 }

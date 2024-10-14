@@ -1,148 +1,149 @@
-::ng-deep{
-    ion-header{
-        text-align: center;
-        padding: 30px 0 20px;
-        box-shadow: none;
-    }
 
-    .header-md{
-        box-shadow: none;
-    }
-
-    ion-header img{
-        width: 96px;
-        height: auto;
-    }
-
-    .login-title{
-        margin: 0 0 15px 0;
-    }
-
-    .login-title h1{
-        color: #fff;
-        margin: 0;
-    }
-
-    .login-text{
-        padding: 0 30px;
-        margin: 0 0 20px 0;
-    }
-
-    .login-text p{
-        color: #C7C7C7;
-        margin: 0;
-    }
-
-    ion-content {
-        --background: transparent;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-    }
-
-    ion-segment{
-        margin: 0 0 10px 0;
-    }
-
-    ion-segment-button p{
-        display: inline-block;
-        vertical-align: middle;
-        margin: 0;
-        color: #fff;
-    }
-
-    
-    ion-segment-button img{
-        width: 40px;
-        display: inline-block;
-        vertical-align: middle;
-    }
-      
-    .login-form {
-        padding: 0 25px;
-        width: 100%;
-        max-width: 600px;
-        margin: 0 auto;
-    }
-
-    .active p{
-        opacity: 1 !important;
-    }
-
-    .iwin-button-theme{
-        --background: #00FFB2;
-        --background-hover: #00FFB2;
-        --background-activated: #00FFB2;
-        --background-focused: #00FFB2;
-        width: 100%;
-        --color: #5433FE;
-        --border-radius: 300px;
-        --padding-top: 25px;
-        --padding-bottom: 25px;
-        margin-bottom: 1rem;
-    }
-
-    .iwin-type-user{
-        margin: 0 0 20px 0;
-        width: 50%;
-        --background: transparent;
-        --padding-bottom: 0;
-        --padding-top: 0;
-        --box-shadow: none;
-    }
-
-    .iwin-type-user p{
-        margin: 0 10px;
-        transition: 0.2s all;
-        opacity: 50%;
-    }
-
-    .request-password{
-        margin-bottom: 2rem;
-    }
-
-    .request-password a{
-        display: inline-block;
-        text-decoration: underline;
-        color: #fff;
-        outline: none;
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 23.88px;
-    }
-
-    .form-group{
-        margin-bottom: 20px;
-    }
-
-    .form-group label{
-        display: block;
-        color: #ECECEC;
-        font-weight: 400;
-        line-height: 20.9px;
-        font-size: 15px;
-        padding: 0 20px;
-        margin: 0 0 5px 0;
-    }
-
-    .form-group input{
-        width: 100%;
-        border: 1px solid #D4CCFF;
-        background-color: transparent;
-        color: #ECECEC;
-        border-radius: 61px;
-        padding: 15px 20px;
-    }
-
-    .form-group input:focus-visible{
-        outline: none;
-    }
-
-    .form-group input::placeholder{
-        color: #ECECEC;
-    }
+ion-header{
+    text-align: center;
+    padding: 30px 0 20px;
+    margin: 0;
+    box-shadow: none;
 }
+
+.header-md{
+    box-shadow: none;
+}
+
+ion-header img{
+    width: 96px;
+    height: auto;
+}
+
+.login-title{
+    margin: 0 0 15px 0;
+}
+
+.login-title h1{
+    color: #fff;
+    margin: 0;
+}
+
+.login-text{
+    padding: 0 30px;
+    margin: 0 0 20px 0;
+}
+
+.login-text p{
+    color: #C7C7C7;
+    margin: 0;
+}
+
+ion-content {
+    --background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+ion-segment{
+    margin: 0 0 10px 0;
+}
+
+ion-segment-button p{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    color: #fff;
+}
+
+
+ion-segment-button img{
+    width: 40px;
+    display: inline-block;
+    vertical-align: middle;
+}
+    
+.login-form {
+    padding: 0 25px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.active p{
+    opacity: 1 !important;
+}
+
+.iwin-button-theme{
+    --background: #00FFB2;
+    --background-hover: #00FFB2;
+    --background-activated: #00FFB2;
+    --background-focused: #00FFB2;
+    width: 100%;
+    --color: #5433FE;
+    --border-radius: 300px;
+    --padding-top: 25px;
+    --padding-bottom: 25px;
+    margin-bottom: 1rem;
+}
+
+.iwin-type-user{
+    margin: 0 0 20px 0;
+    width: 50%;
+    --background: transparent;
+    --padding-bottom: 0;
+    --padding-top: 0;
+    --box-shadow: none;
+}
+
+.iwin-type-user p{
+    margin: 0 10px;
+    transition: 0.2s all;
+    opacity: 50%;
+}
+
+.request-password{
+    margin-bottom: 2rem;
+}
+
+.request-password a{
+    display: inline-block;
+    text-decoration: underline;
+    color: #fff;
+    outline: none;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 23.88px;
+}
+
+.form-group{
+    margin-bottom: 20px;
+}
+
+.form-group label{
+    display: block;
+    color: #ECECEC;
+    font-weight: 400;
+    line-height: 20.9px;
+    font-size: 15px;
+    padding: 0 20px;
+    margin: 0 0 5px 0;
+}
+
+.form-group input{
+    width: 100%;
+    border: 1px solid #D4CCFF;
+    background-color: transparent;
+    color: #ECECEC;
+    border-radius: 61px;
+    padding: 15px 20px;
+}
+
+.form-group input:focus-visible{
+    outline: none;
+}
+
+.form-group input::placeholder{
+    color: #ECECEC;
+}
+
 
 :host {
     height: 100vh; 
