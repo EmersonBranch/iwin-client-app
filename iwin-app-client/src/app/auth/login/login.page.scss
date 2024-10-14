@@ -62,7 +62,12 @@
     .login-form {
         padding: 0 25px;
         width: 100%;
-        max-width: 400px;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .active p{
+        opacity: 1 !important;
     }
 
     .iwin-button-theme{
@@ -86,6 +91,8 @@
 
     .iwin-type-user p{
         margin: 0 10px;
+        transition: 0.2s all;
+        opacity: 50%;
     }
 
     .request-password{

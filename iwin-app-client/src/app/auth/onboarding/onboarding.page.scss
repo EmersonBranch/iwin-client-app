@@ -36,7 +36,8 @@
     }
 
     .onboard-slider .slide-image img{
-        width: 281px;
+        max-width: 100%;
+        height: auto;
     }
 
     .onboard-slider .slide-title{
@@ -74,7 +75,7 @@
     .onboard-slider .slide-button .iwin-button-theme .button-native{
         border-radius: 300px;
     }
-
+    
 }
 
 :host {
@@ -87,6 +88,5 @@
     ion-content{
         --background: transparent;
     }
-
 }
 

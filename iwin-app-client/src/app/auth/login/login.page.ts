@@ -8,6 +8,7 @@ import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms'
 })
 export class LoginPage implements OnInit {
   form!: FormGroup;
+  userTypeControl = new FormControl('usuario');
 
   constructor(
     private fb: FormBuilder,
@@ -17,10 +18,15 @@ export class LoginPage implements OnInit {
     this.initForm();
   }
 
+  selectUserType(value: string): void {
+    this.form.patchValue({ userType: value }); // Atualiza o FormGroup
+  }
+
   initForm(){
     this.form = this.fb.group({
       login: [],
-      password: []
+      password: [],
+      userType: ['usuario']
     })
   }
 
