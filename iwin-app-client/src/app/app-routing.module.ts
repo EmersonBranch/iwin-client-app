@@ -23,6 +23,11 @@ const routes: Routes = [
     loadChildren: () => import('./loading/loading.module').then( m => m.LoadingPageModule)
   },
   {
+    path: 'request-password',
+    loadChildren: () => import('./auth/request-password/request-password.module').then( m => m.RequestPasswordPageModule)
+  },
+
+  {
     path: '',
     redirectTo: 'loading',
     pathMatch: 'full'

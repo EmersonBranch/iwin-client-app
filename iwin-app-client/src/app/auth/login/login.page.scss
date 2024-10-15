@@ -113,6 +113,15 @@ ion-segment-button img{
     line-height: 23.88px;
 }
 
+.request-password.new-account a{
+    text-decoration: none;
+}
+
+.request-password.new-account b{
+    color: #00FFB2;
+    text-decoration: underline;
+}
+
 .form-group{
     margin-bottom: 20px;
 }
@@ -130,7 +139,7 @@ ion-segment-button img{
 .form-group input{
     width: 100%;
     border: 1px solid #D4CCFF;
-    background-color: transparent;
+    background-color: rgba(212, 204, 255, 0.3);
     color: #ECECEC;
     border-radius: 61px;
     padding: 15px 20px;
@@ -143,6 +152,21 @@ ion-segment-button img{
 .form-group input::placeholder{
     color: #ECECEC;
 }
+
+
+.hand {
+    display: inline-block;
+    animation: wave 2s forwards; /* 'forwards' mantém o último estado da animação */
+}
+
+@keyframes wave {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(15deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(15deg); }
+    100% { transform: rotate(0deg); }
+}
+
 
 
 :host {
