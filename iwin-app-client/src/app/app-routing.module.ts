@@ -26,13 +26,15 @@ const routes: Routes = [
     path: 'request-password',
     loadChildren: () => import('./auth/request-password/request-password.module').then( m => m.RequestPasswordPageModule)
   },
-
+  {
+    path: 'reset-password',
+    loadChildren: () => import('./auth/reset-password/reset-password.module').then( m => m.ResetPasswordPageModule)
+  },
   {
     path: '',
-    redirectTo: 'loading',
+    redirectTo: 'reset-password',
     pathMatch: 'full'
   },
-
 ];
 
 @NgModule({
