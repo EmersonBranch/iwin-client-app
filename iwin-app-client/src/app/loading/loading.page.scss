@@ -36,13 +36,13 @@ body::before {
     margin: 0 3px;
     font-size: 100px;
     height: 220px;
-    width: 22px;
+    width: 26px;
     font-weight: bold;
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
     background: linear-gradient(180deg, #00FFB2 15%, #5433FE 85%);
-    animation: shrink 2s forwards;
+    animation: shrink 1.5s forwards;
 }
 
 .effect-display {
@@ -58,19 +58,19 @@ body::before {
 }
 
 .w {
-    animation: slideUp 0.2s forwards 2s; /* Vem de baixo */
+    animation: slideUp 0.7s forwards 0.8s; /* Vem de baixo */
     background: transparent;
     color: #000;
 }
 
 .i {
-    animation: slideDown 0.2s forwards 2s; /* Vem de cima */
+    animation: slideDown 0.7s forwards 0.8s; /* Vem de cima */
     background: transparent;
     color: #000;
 }
 
 .n {
-    animation: slideRight 0.2s forwards 2s; /* Vem da direita */
+    animation: slideRight 0.7s forwards 0.8s; /* Vem da direita */
     background: transparent;
     color: #000;
 }
@@ -120,7 +120,7 @@ body::before {
 
 @keyframes shrink {
     0% {
-        transform: scale(10);
+        transform: scale(50);
     }
     100% {
         transform: scale(1);
