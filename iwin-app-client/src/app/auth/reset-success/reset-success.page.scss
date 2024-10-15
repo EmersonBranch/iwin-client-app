@@ -1,0 +1,70 @@
+
+ion-content {
+    --background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.reset-content{
+    padding: 0 30px;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.reset-content .content-image {
+    margin: 0 0 40px 0;
+}
+
+.reset-content .content-image img{
+    max-width: 100%;
+    height: auto;
+}
+
+.reset-content .content-title{
+    margin: 0 0 5px 0;
+}
+
+.reset-content .content-title h1{
+    color: #fff;
+    margin: 0;
+    font-size: 32px;
+}
+
+.reset-content .content-text{
+    margin: 0 0 40px 0;
+}
+
+.reset-content .content-text p{
+    color: #C7C7C7;
+    margin: 0;
+}
+
+
+.iwin-button-theme{
+    --background: #00FFB2;
+    --background-hover: #00FFB2;
+    --background-activated: #00FFB2;
+    --background-focused: #00FFB2;
+    width: 100%;
+    --color: #5433FE;
+    --border-radius: 300px;
+    --padding-top: 25px;
+    --padding-bottom: 25px;
+    margin-top: 4rem;
+}
+
+
+:host {
+    height: 100vh; 
+    background: #5433FE;
+    display: block;
+    background-image: url('../../../assets/images/iwin-cover.png'); 
+    background-size: cover;
+    background-position: center; 
+    background-blend-mode: overlay;
+}

@@ -31,10 +31,16 @@ const routes: Routes = [
     loadChildren: () => import('./auth/reset-password/reset-password.module').then( m => m.ResetPasswordPageModule)
   },
   {
+    path: 'reset-success',
+    loadChildren: () => import('./auth/reset-success/reset-success.module').then( m => m.ResetSuccessPageModule)
+  },
+  {
     path: '',
-    redirectTo: 'reset-password',
+    redirectTo: 'reset-success',
     pathMatch: 'full'
   },
+
+
 ];
 
 @NgModule({
