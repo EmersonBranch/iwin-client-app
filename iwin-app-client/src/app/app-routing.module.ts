@@ -38,7 +38,15 @@ const routes: Routes = [
     path: '',
     redirectTo: 'reset-success',
     pathMatch: 'full'
+  },  {
+    path: 'components',
+    loadChildren: () => import('./components/components.module').then( m => m.ComponentsPageModule)
   },
+  {
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+  },
+
 
 
 ];
