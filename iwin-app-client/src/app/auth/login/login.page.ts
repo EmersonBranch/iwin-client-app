@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms';
+import { Router } from '@angular/router';
+import { AuthService } from 'src/service/auth/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -12,6 +14,8 @@ export class LoginPage implements OnInit {
 
   constructor(
     private fb: FormBuilder,
+    private authService:AuthService,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -19,36 +23,39 @@ export class LoginPage implements OnInit {
   }
 
   selectUserType(value: string): void {
-    this.form.patchValue({ userType: value }); // Atualiza o FormGroup
+    this.form.patchValue({ userType: value }); 
   }
 
   initForm(){
     this.form = this.fb.group({
-      login: [],
-      password: [],
-      userType: ['usuario']
+      email: [''],
+      password: ['']
     })
   }
 
-  onSubmit() {
-  //   const loginInfo = {
-  //     username: this.username,
-  //     password: this.password,
-  //     type: this.loginType,  // Indica se é 'usuario' ou 'lojista'
-  //   };
+  submit() {
+    if (this.isValidForm()) {
+      const { email, password } = this.form.value;
+      this.authService.login({ email, password })
+        .subscribe({
+          next: () => {
+            this.router.navigate(['home']).then(() => {
+            });
+          },
+          error: (error: any) => {
+            console.error('Erro de autenticação:', error.code, error.message);
+           
+          }
+        });
+    }
+  }
+  
+  isValidForm() {
+    return this.form.valid;
+  }
 
-  //   // Logar ou enviar as informações conforme necessário
-  //   if (this.loginType === 'usuario') {
-  //     console.log('Login como Usuário:', loginInfo);
-  //     // Aqui você pode chamar a função de autenticação para usuário
-  //   } else {
-  //     console.log('Login como Lojista:', loginInfo);
-  //     // Aqui você pode chamar a função de autenticação para lojista
-  //   }
-
-  //   // Resetar os campos após o login (opcional)
-  //   this.username = '';
-  //   this.password = '';
+  limparFormulario() {
+    this.form.reset({});
   }
 
 }
