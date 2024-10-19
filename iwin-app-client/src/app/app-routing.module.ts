@@ -36,9 +36,10 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'reset-success',
+    redirectTo: 'loading',
     pathMatch: 'full'
-  },  {
+  },
+  {
     path: 'components',
     loadChildren: () => import('./components/components.module').then( m => m.ComponentsPageModule)
   },
