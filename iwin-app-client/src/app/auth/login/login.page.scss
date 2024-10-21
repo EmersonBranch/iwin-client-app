@@ -93,6 +93,10 @@ ion-segment-button img{
     --box-shadow: none;
 }
 
+.iwin-type-user.active{
+    --background: rgba(0, 0, 0, 0.2);
+}
+
 .iwin-type-user p{
     margin: 0 10px;
     transition: 0.2s all;

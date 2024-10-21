@@ -12,7 +12,7 @@ import { AuthService } from 'src/service/auth/auth.service';
 })
 export class SignupPage implements OnInit {
   form!: FormGroup;
-  userTypeControl = new FormControl('usuario');
+  userType: string = 'usuario';
 
   constructor(
     private fb: FormBuilder,
@@ -26,14 +26,17 @@ export class SignupPage implements OnInit {
   }
 
   selectUserType(value: string): void {
-    this.form.patchValue({ userType: value }); 
+    this.userType = value;
+    this.form.get('userType')?.setValue(value);
   }
+
 
   initForm(){
     this.form = this.fb.group({
       name: [''],
       login: [''],
-      password: ['']
+      password: [''],
+      userType: ['usuario']
     })
   }
 
