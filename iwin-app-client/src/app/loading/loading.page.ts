@@ -15,7 +15,7 @@ export class LoadingPage implements OnInit {
   ngOnInit() {
     setTimeout(() => {
       this.router.navigate(['/onboarding']);
-    }, 4000); 
+    }, 2200); 
   }
 
 }

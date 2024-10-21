@@ -1,0 +1,28 @@
+
+.iwin-avatar{
+    display: flex;
+    align-items: center;
+}
+
+.iwin-avatar ion-avatar{
+    margin-right: 10px;
+}
+
+.iwin-avatar ion-avatar img{
+    max-width: 100%;
+    height: auto;
+}
+
+.iwin-avatar .avatar-content .iwin-title h2{
+    margin: 0;
+    font-weight: bold;
+    color: #fff;
+    font-size: 16px;
+}
+
+.iwin-avatar .avatar-content .iwin-text p{
+    margin: 0;
+    color: #fff;
+    font-size: 12px;
+    line-height: 22px;
+}
