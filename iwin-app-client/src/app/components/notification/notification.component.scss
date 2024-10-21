@@ -1,0 +1,163 @@
+
+
+.open-notification{
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+
+.open-notification:focus,
+.open-notification:focus{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.back{
+    margin: 0 0 0 10px;
+}
+
+.back button{
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 0px 12px;
+    border-radius: 42px;
+    transition: 0.2s all;
+}
+
+.back button ion-icon{
+    color: #fff;
+    font-size: 30px;
+    height: 22px;
+}
+
+.back button:hover,
+.back button:focus{
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.back button:hover, 
+.back button:focus ion-icon{
+    color: #fff;
+}
+
+ion-title{
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+}
+
+ion-content{
+    --background: #5433FE;
+}
+
+ion-header{
+    --background: #5433FE;
+}
+
+ion-header ion-toolbar{
+    --background: #5433FE;
+    padding: 30px 0;
+    --border: none;
+    --border-width: 0;
+}
+
+ion-content .content{
+    margin: 0 0 30px 0;
+}
+
+ion-content .content .content-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ion-content .content .content-info .day h2{
+    color: #fff;
+    font-size: 18px;
+    margin: 0;
+    font-weight: 400;
+}
+
+ion-content .content .content-info .clear button{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    text-decoration: underline;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+ion-content .content .content-list ul{
+    margin: 0;
+    padding: 0;
+}
+
+ion-content .content .content-list ul li{
+    border-top: 1px solid #6E52FE;
+    border-bottom: 1px solid #6E52FE;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ion-content .content .content-list ul li .icon{
+    width: 48px;
+    height: 48px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+ion-content .content .content-list ul li .message{
+    padding: 0 5px;
+}
+
+ion-content .content .content-list ul li .message h3{
+    margin: 0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+ion-content .content .content-list ul li .message p{
+    margin: 0;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+ion-content .content .content-list ul li .hour{
+    align-self: flex-start;
+}
+
+ion-content .content .content-list ul li .hour span{
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+}
+
+ion-content .empt .image{
+    margin-bottom: 30px;
+}
+
+ion-content .empt .image img{
+    max-width: 100%;
+    height: auto;
+}
+
+ion-content .empt .iwin-title{
+    margin-bottom: 5px;
+}
+
+ion-content .empt .iwin-title h2{
+    color: #fff;
+    margin: 0;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+ion-content .empt .iwin-text p{
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400;
+    color: #C7C7C7;
+}
