@@ -1,0 +1,171 @@
+
+<button expand="block" class="open-notification" (click)="setOpen(true)"><img src="assets/icon/icon-iwin-notifications.png" alt=""></button>
+<ion-modal [isOpen]="isModalOpen">
+  <ng-template>
+    <ion-header>
+      <ion-toolbar>
+        <div class="back" slot="start">
+          <button type="button" (click)="setOpen(false)"><ion-icon name="arrow-back-outline"></ion-icon></button>
+        </div>
+        <ion-title>Notificações</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <!-- <div class="empt text-center">
+        <div class="image">
+          <img src="assets/images/iwin-empt-notification.png" alt="iwin_empt_notifications">
+        </div>
+        <div class="iwin-title">
+          <h2>Não há nada aqui...</h2>
+        </div>
+        <div class="iwin-text">
+          <p>Suas notificações apareceram aqui,<br> quando tiver algo!</p>
+        </div>
+      </div> -->
+      <div class="content">
+        <div class="content-info ion-padding">
+          <div class="day">
+            <h2>Hoje</h2>
+          </div>
+          <div class="clear">
+            <button>Limpar tudo</button>
+          </div>
+        </div>
+        <div class="content-list">
+          <ul>
+            <li class="ion-padding">
+              <div class="icon">
+                <img src="" alt="">
+              </div>
+              <div class="message">
+                <h3>Fullsnack Designers</h3>
+                <p>Hello guys, we have discussed about ...</p>
+              </div>
+              <div class="hour">
+                <span>16:04</span>
+              </div>
+            </li>
+            <li class="ion-padding">
+              <div class="icon">
+                <img src="" alt="">
+              </div>
+              <div class="message">
+                <h3>Fullsnack Designers</h3>
+                <p>Hello guys, we have discussed about ...</p>
+              </div>
+              <div class="hour">
+                <span>16:04</span>
+              </div>
+            </li>
+            <li class="ion-padding">
+              <div class="icon">
+                <img src="" alt="">
+              </div>
+              <div class="message">
+                <h3>Fullsnack Designers</h3>
+                <p>Hello guys, we have discussed about ...</p>
+              </div>
+              <div class="hour">
+                <span>16:04</span>
+              </div>
+            </li>
+            <li class="ion-padding">
+              <div class="icon">
+                <img src="" alt="">
+              </div>
+              <div class="message">
+                <h3>Fullsnack Designers</h3>
+                <p>Hello guys, we have discussed about ...</p>
+              </div>
+              <div class="hour">
+                <span>16:04</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content-info ion-padding">
+          <div class="day">
+            <h2>Ontem</h2>
+          </div>
+        </div>
+        <div class="content-list">
+          <ul>
+            <li class="ion-padding">
+              <div class="icon">
+                <img src="" alt="">
+              </div>
+              <div class="message">
+                <h3>Fullsnack Designers</h3>
+                <p>Hello guys, we have discussed about ...</p>
+              </div>
+              <div class="hour">
+                <span>16:04</span>
+              </div>
+            </li>
+            <li class="ion-padding">
+              <div class="icon">
+                <img src="" alt="">
+              </div>
+              <div class="message">
+                <h3>Fullsnack Designers</h3>
+                <p>Hello guys, we have discussed about ...</p>
+              </div>
+              <div class="hour">
+                <span>16:04</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content-info ion-padding">
+          <div class="day">
+            <h2>25/03/2024</h2>
+          </div>
+        </div>
+        <div class="content-list">
+          <ul>
+            <li class="ion-padding">
+              <div class="icon">
+                <img src="" alt="">
+              </div>
+              <div class="message">
+                <h3>Fullsnack Designers</h3>
+                <p>Hello guys, we have discussed about ...</p>
+              </div>
+              <div class="hour">
+                <span>16:04</span>
+              </div>
+            </li>
+            <li class="ion-padding">
+              <div class="icon">
+                <img src="" alt="">
+              </div>
+              <div class="message">
+                <h3>Fullsnack Designers</h3>
+                <p>Hello guys, we have discussed about ...</p>
+              </div>
+              <div class="hour">
+                <span>16:04</span>
+              </div>
+            </li>
+            <li class="ion-padding">
+              <div class="icon">
+                <img src="" alt="">
+              </div>
+              <div class="message">
+                <h3>Fullsnack Designers</h3>
+                <p>Hello guys, we have discussed about ...</p>
+              </div>
+              <div class="hour">
+                <span>16:04</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </ion-content>
+  </ng-template>
+</ion-modal>
