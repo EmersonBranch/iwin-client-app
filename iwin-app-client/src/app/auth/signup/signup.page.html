@@ -17,24 +17,22 @@
 
   <form (ngSubmit)="register()" [formGroup]="form" class="signup-form">
     <ion-button 
-      color="light"
-      value="usuario" 
-      class="iwin-type-user iwin-text" 
-      [ngClass]="{'active': form.get('userType')?.value === 'usuario'}" 
-      (click)="selectUserType('usuario')">
-        <img src="../assets/icon/icon-user-login.png" alt="iwin-user">
-        <p>Usuário</p>
-    </ion-button>
+    value="usuario" 
+    class="iwin-type-user iwin-text" 
+    [ngClass]="{'active': form.get('userType')?.value === 'usuario'}" 
+    (click)="selectUserType('usuario')">
+    <img [src]="userType === 'usuario' ? '../assets/icon/icon-user-login-active.png' : '../assets/icon/icon-user-login-disable.png'" alt="iwin-user">
+      <p>Usuário</p>
+  </ion-button>
 
-    <ion-button 
-      color="light"
-      value="lojista" 
-      class="iwin-type-user iwin-text" 
-      [ngClass]="{'active': form.get('userType')?.value === 'lojista'}" 
-      (click)="selectUserType('lojista')">
-        <p>Lojista</p>
-        <img src="../assets/icon/icon-shopkeeper-login.png" alt="iwin-user">
-    </ion-button>
+  <ion-button 
+    value="lojista" 
+    class="iwin-type-user iwin-text" 
+    [ngClass]="{'active': form.get('userType')?.value === 'lojista'}" 
+    (click)="selectUserType('lojista')">
+      <p>Lojista</p>
+      <img [src]="userType === 'lojista' ? '../assets/icon/icon-shopkeeper-login-active.png' : '../assets/icon/icon-shopkeeper-login-disable.png'" alt="iwin-shopkeeper">
+  </ion-button>
 
     <div class="form-group">
       <label for="name">Seu nome:</label>
