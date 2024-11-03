@@ -10,6 +10,7 @@ import { HomePage } from './home.page';
 
 import { AvatarComponent } from '../components/avatar/avatar.component';
 import { NotificationComponent } from '../components/notification/notification.component';
+import { SearchComponent } from '../components/search/search.component';
 
 @NgModule({
   imports: [
@@ -18,6 +19,6 @@ import { NotificationComponent } from '../components/notification/notification.c
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage, AvatarComponent, NotificationComponent]
+  declarations: [HomePage, AvatarComponent, NotificationComponent, SearchComponent]
 })
 export class HomePageModule {}

@@ -1,0 +1,38 @@
+.search-content .search-title h2{
+    font-size: 24px;
+    color: #fff;
+    margin: 0 0 15px 0;
+}
+
+.search-content .search-input{
+    position: relative;
+}
+
+.search-content .search-input ion-icon{
+    position: absolute;
+    color: #fff;
+    top: 13px;
+    left: 25px;
+    font-size: 20px;
+}
+
+.search-content .search-input input{
+    width: 100%;
+    border: 1px solid transparent;
+    background-color: rgba(212, 204, 255, 0.3);
+    border-radius: 61px;
+    padding: 15px 55px;
+    height: 48px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.search-content .search-input input:focus-visible{
+    outline: none;
+}
+
+.search-content .search-input input::placeholder{
+    color: #fff;
+    font-weight: 200;
+}
